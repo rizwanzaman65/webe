@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> Web Expertizo</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/web_expertizo-removebg-preview.png" rel="icon">
+  <link href="assets/img/web_expertizo-removebg-preview.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link href="css/1.css" rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="css/2.css">
+<link rel="stylesheet" href="css/3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/4.css">
+<script type="text/javascript" async="" src="js/2"></script>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<style>
+  .bubbles_wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .bubble {
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+  }
+
+  /* Animation Keyframes */
+  @keyframes animateBubble {
+    0% { margin-top: 100%; }
+    100% { margin-top: -30%; }
+  }
+
+  @keyframes sideWays {
+    0% { margin-left: 0; }
+    100% { margin-left: 25px; }
+  }
+
+  /* Individual Bubbles */
+  .x1 { animation: animateBubble 6s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 6%; top: 45%; background: #FF3D00; }
+  .x2 { animation: animateBubble 7s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 5%; top: 80%; background: #FFEB3B; }
+  .x3 { animation: animateBubble 8s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 10%; top: 40%; background: #00E676; }
+  .x4 { animation: animateBubble 5s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 20%; top: 0; background: #FF5722; }
+  .x5 { animation: animateBubble 7s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 30%; top: 50%; background: #FFFFFF; }
+  .x6 { animation: animateBubble 6s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 50%; top: 0; background: #FF4081; }
+  .x7 { animation: animateBubble 8s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 65%; top: 70%; background: #69F0AE; }
+  .x8 { animation: animateBubble 5s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 80%; top: 10%; background: #FFD54F; }
+  .x9 { animation: animateBubble 7s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 90%; top: 50%; background: #FFAB40; }
+  .x10 { animation: animateBubble 8s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 80%; top: 80%; background: #FF5252; }
+  .x11 { animation: animateBubble 6s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 15%; top: 90%; background: #D500F9; }
+  .x12 { animation: animateBubble 7s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 45%; top: 30%; background: #FF3D00; }
+  .x13 { animation: animateBubble 8s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 25%; top: 60%; background: #FF6D00; }
+  .x14 { animation: animateBubble 5s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 60%; top: 20%; background: #448AFF; }
+  .x15 { animation: animateBubble 6s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 70%; top: 30%; background: #40C4FF; }
+  .x16 { animation: animateBubble 7s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 85%; top: 10%; background: #FFEA00; }
+  .x17 { animation: animateBubble 8s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 95%; top: 70%; background: #FF6E40; }
+  .x18 { animation: animateBubble 5s linear infinite, sideWays 3s ease-in-out infinite alternate; left: 35%; top: 80%; background: #00E5FF; }
+  .x19 { animation: animateBubble 6s linear infinite, sideWays 2s ease-in-out infinite alternate; left: 55%; top: 5%; background: #FFC400; }
+  .x20 { animation: animateBubble 7s linear infinite, sideWays 4s ease-in-out infinite alternate; left: 75%; top: 85%; background: #FF4081; }
+</style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo2.svg" alt="">
+        <!-- <h1 class="sitename">GP</h1> -->
+        <span></span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="  ">Home<br></a></li>
+          <li><a href="About-Us.html">About Us</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Custom-Web-Development.html">Custom Web Development</a></li>
+             
+              <li><a href="WordPress-Development.html">WordPress Development</a></li>
+              <li><a href="Shopify-Store-Development.html">Shopify Store Development              </a></li>
+              <li><a href="SEO-Optimization.html">SEO Optimization
+              </a></li>
+            
+
+              <li><a href="Graphic-Design.html">Graphic Design           </a></li>
+              
+            
+            </ul>
+          </li>
+          <li><a href="portfolio-details.html">Portfolio</a></li>
+          <li><a href="Testimonials.html"> Testimonials</a></li>
+        
+          <li><a href="Contact-Us.html">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a href="Form.html" class="btn-getstarted">
+        <span class="jumping-text">
+          <span class="letter">G</span>
+          <span class="letter">e</span>
+          <span class="letter">t</span>
+          <span class="letter">&nbsp; </span>
+          <span class="letter">S</span>
+          <span class="letter">t</span>
+          <span class="letter">a</span>
+          <span class="letter">r</span>
+          <span class="letter">t</span>
+          <span class="letter">e</span>
+          <span class="letter">d</span>
+        </span>
+      </a>
+      
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/w5.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-6 col-lg-8">
+            <br>
+            <h2>Your Success is Our Mission<span>.</span></h2>
+            <p class="text-animate">We are a talented team of digital professionals            </p>
+          </div>
+        </div>
+
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i class="bi bi-code-slash"></i>
+              <h3><a href="Custom-Web-Development.html">Custom Web Development</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i class="bi bi-wordpress"></i>
+              <h3><a href="WordPress-Development.html">WordPress Development</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="bi bi-shop"></i>
+              <h3><a href="Shopify-Store-Development.html">Shopify Store Development</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h3><a href="SEO-Optimization.html">SEO Optimization</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="bi bi-brush"></i>
+              <h3><a href="Graphic-Design.html">Graphic Design</a></h3>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+    </section><!-- /Hero Section -->
+<br><br>
+   <!-- About Section -->
+<section id="about" class="about section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+      <div class="col-lg-6 order-1 order-lg-2">
+        <img src="assets/img/about.webp" class="img-fluid" alt="About Us">
+      </div>
+      <div class="col-lg-6 order-2 order-lg-1 content">
+        <h3 style="color: #FF3D00;">Your Vision, Our Expertise</h3>
+        <p class="">
+          At Web Expertizo, we turn your ideas into reality with tailor-made digital solutions designed for success.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-all"></i> <span>Expertise in web development, graphic design, SEO, and more.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Custom solutions that meet your unique business needs.</span></li>
+          <li><i class="bi bi-check2-all"></i> <span>Dedicated support to ensure your project runs smoothly from start to finish.</span></li>
+        </ul>
+        <p>
+          We understand that every business is different. Our skilled team works closely with you to create a customized strategy that drives results. Ready to elevate your online presence? Contact us today to discuss your project and let us help you achieve your goals! Your success is just a message away!
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+<br><br>
+    <!-- Clients Section -->
+       <!-- Section Title -->
+       <div class="container section-title" data-aos="fade-up">
+        <h2>Our Clients</h2>
+        <p>Partners in Success</p>
+      <br>
+        <div class="slider">
+          <div class="slide-track">
+
+            <div class="slide" id="sliderrr1">
+              <img src="assets/img/clients/client-8.webp" alt="">
+            </div>
+
+
+            <div class="slide" id="sliderrr1">
+              <img src="assets/img/clients/client-1.webp" alt="">
+            </div>
+            
+            <div class="slide" id="sliderrr1">
+              <img src="assets/img/clients/client-2.webp" alt="">
+            </div><div class="slide" id="sliderrr1">
+              <img src="assets/img/clients/client-3.webp" alt="">
+            </div>
+            <div class="slide" id="sliderrr1">
+              <img src="assets/img/clients/client-4.webp" alt="">
+            </div>
+            <div class="slide" id="sliderrr1">
+              <img src="assets/img/clients/client-5.webp" alt="">
+            </div>
+         
+            <div class="slide" id="sliderrr1">
+              <img src="assets/img/clients/client-7.webp" alt="">
+            </div>
+           
+      
+           
+           
+        
+      
+          </div>
+        </div>
+
+
+   
+
+<br><br>
+
+
+ <!-- Features Section -->
+<section id="features" class="features section">
+
+  <div class="container">
+
+    <div class="row gy-4">
+      <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/services1.jpg" alt="Features Image" class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+
+        <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-code-slash flex-shrink-0"></i>
+          <div>
+            <h4>Custom Web Development</h4>
+            <p style="font-family: var(--heading-font); font-weight: 500;">We deliver custom websites built from scratch, tailored to meet the specific needs of your business, ensuring both functionality and aesthetics.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-wordpress flex-shrink-0"></i>
+          <div>
+            <h4>WordPress Development</h4>
+            <p style="font-family: var(--heading-font); font-weight: 500;">Our team specializes in creating user-friendly WordPress websites that are easy to manage and optimized for performance.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-shop flex-shrink-0"></i>
+          <div>
+            <h4>Shopify Store Development</h4>
+            <p style="font-family: var(--heading-font); font-weight: 500;">We create fully optimized and feature-rich Shopify stores, making it easy for you to manage products and grow your eCommerce business.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+
+        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-bar-chart flex-shrink-0"></i>
+          <div>
+            <h4>SEO Optimization</h4>
+            <p style="font-family: var(--heading-font); font-weight: 500;">Boost your online visibility with our expert SEO services, driving more traffic and ensuring your site ranks higher in search engines.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+        <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-brush flex-shrink-0"></i>
+          <div>
+            <h4>Graphic Design</h4>
+            <p style="font-family: var(--heading-font); font-weight: 500;">From logos to full branding, our creative graphic design services bring your brand to life with stunning visuals that captivate your audience.</p>
+          </div>
+        </div><!-- End Features Item-->
+
+      
+
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Features Section -->
+</div>
+ <!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>Experience Premium Services    </p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+      <!-- First Row with 3 Services -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-code-slash"></i>
+          </div>
+          <a href="Custom-Web-Development.html" class="stretched-link">
+            <h3>Custom Web Development</h3>
+          </a>
+          <p>Transform your vision into reality! Our custom web development services are tailored to your unique needs, ensuring your website stands out and effectively engages your audience. Let's build something exceptional together!</p>
+        </div>
+
+        
+      
+
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-wordpress"></i>
+          </div>
+          <a href="WordPress-Development.html" class="stretched-link">
+            <h3>WordPress Development</h3>
+          </a>
+          <p>Unlock the full potential of your website with our expert WordPress development. We create stunning, user-friendly sites that are optimized for performance and conversion. Ready to elevate your online presence?</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-shop"></i>
+          </div>
+          <a href="Shopify-Store-Development.html" class="stretched-link">
+            <h3>Shopify Store Development</h3>
+          </a>
+          <p>Launch your Shopify store with our expert development! We build visually appealing and highly functional online stores that convert visitors into customers. Let’s turn your business dreams into reality!</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Second Row with 2 Centered Services Closer Together -->
+      <div class="col-lg-5 col-md-6 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-bar-chart"></i>
+          </div>
+          <a href="SEO-Optimization.html" class="stretched-link">
+            <h3>SEO Optimization</h3>
+          </a>
+          <p>Boost your online visibility with our SEO optimization services! We implement proven strategies to drive organic traffic and enhance your search engine rankings. Get ready to be found by your ideal customers!</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item position-relative">
+          <div class="icon">
+            <i class="bi bi-brush"></i>
+          </div>
+          <a href="Graphic-Design.html" class="stretched-link">
+            <h3>Graphic Design</h3>
+          </a>
+          <p>Make a lasting impression with our graphic design services! We craft stunning visuals that capture attention and communicate your brand's message effectively. Let's create something beautiful together!</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+<br><br>
+
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section dark-background">
+
+  <img src="assets/img/cta-bg.webp" alt="Call to Action Background">
+
+  <div class="container">
+    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-10">
+        <div class="text-center">
+          <h3>Ready to Elevate Your Business?</h3>
+          <p>Transform your ideas into reality with our expert web development services. We cater to all types of websites to help you reach your goals effectively. Let’s work together to make your vision a reality!</p>
+          <a class="cta-btn" href="Form.html" style="color: white;">Send Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Call To Action Section -->
+
+<br><br>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Explore Our Latest Work
+        </p>
+      </div><!-- End Section Title -->
+    
+  
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item btn-group" role="presentation">
+            <button type="button" class="nav-link active"  id="tab1-tab" data-bs-toggle="tab"
+                data-bs-target="#tab1-tab-pane" role="tab" aria-controls="tab1-tab-pane" aria-selected="false" >
+              Web Design 
+            </button>
+          
+            
+        </li>
+
+        <li class="nav-item btn-group" role="presentation">
+            <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2-tab-pane"
+                type="button" role="tab" aria-controls="tab2-tab-pane" aria-selected="false">Logo Design
+            </button>
+        </li>
+
+        <li class="nav-item btn-group" role="presentation">
+            <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3-tab-pane"
+                type="button" role="tab" aria-controls="tab3-tab-pane" aria-selected="false">Business Cards
+            </button>
+        </li>
+       
+        <li class="nav-item btn-group" role="presentation">
+            <button class="nav-link" id="tab5-tab" onclick="gallerySet()" data-bs-toggle="tab"
+                data-bs-target="#tab5-tab-pane" type="button" role="tab" aria-controls="tab5-tab-pane"
+                aria-selected="false">Branding
+            </button>
+        </li>
+
+
+
+       
+      
+
+
+
+    </ul>
+
+
+        
+
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane show active" id="tab1-tab-pane" role="tabpanel" aria-labelledby="tab1-tab"
+                tabindex="0">
+                <div class="container text-center">
+
+                  <br><br>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-6">
+                            <div class="box">
+                                <a href="images/web/ecommerce11.webp" target="_blank"><img
+                                        src="images/web/ecommerce11.webp" class="card-img img-fluid"
+                                        alt="Rochee Sports"></a>
+                               
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-4 col-lg-4 col-sm-6">
+                            <div class="box">
+                                <a href="images/web/ecom2.webp" target="_blank"><img
+                                        src="images/web/ecom2.webp" class="card-img img-fluid"
+                                        alt="Rochee Sports"></a>
+                               
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-4 col-sm-6">
+                            <div class="box">
+                                <a href="images/web/ecom1.webp" target="_blank"><img
+                                        src="images/web/ecom1.webp" class="card-img img-fluid"
+                                        alt="Rochee Sports"></a>
+                               
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-4 col-sm-6">
+                            <div class="box">
+                                <a href="images/web/cleaning.webp" target="_blank"><img
+                                        src="images/web/cleaning.webp" class="card-img img-fluid"
+                                        alt="Rochee Sports"></a>
+                               
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 col-lg-4 col-sm-6">
+                            <div class="box">
+                                <a href="images/web/car.webp" target="_blank"><img
+                                        src="images/web/car.webp" class="card-img img-fluid"
+                                        alt="Rochee Sports"></a>
+                               
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-md-4 col-lg-4 col-sm-6">
+                            <div class="box">
+                                <a href="images/web/11_property_list_v1.webp" target="_blank"><img
+                                        src="images/web/11_property_list_v1.webp" class="card-img img-fluid"
+                                        alt="Rochee Sports"></a>
+                               
+                            </div>
+                        </div>
+
+
+
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    
+
+                    <!--  -->
+                </div>
+            </div>
+            <div class="tab-pane " id="tab2-tab-pane" role="tabpanel" aria-labelledby="tab2-tab" tabindex="0">
+                <div class="container pt-5">
+                    <!--Logo First row      -->
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="33" data-toggle="modal" data-title="Captain Plumbing"
+                                data-image="images/captain plumbing.webp"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="images/logo/9.webp"
+                                    alt="Captain Plumbing">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="33" data-toggle="modal" data-title="Captain Plumbing"
+                                data-image="images/captain plumbing.webp"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="images/logo/2.webp"
+                                    alt="Captain Plumbing">
+                            </a>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="33" data-toggle="modal" data-title="Captain Plumbing"
+                                data-image="images/captain plumbing.webp"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="images/logo/3.webp"
+                                    alt="Captain Plumbing">
+                            </a>
+                        </div>
+
+
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="33" data-toggle="modal" data-title="Captain Plumbing"
+                                data-image="images/captain plumbing.webp"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="images/logo/4.webp"
+                                    alt="Captain Plumbing">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="33" data-toggle="modal" data-title="Captain Plumbing"
+                                data-image="images/captain plumbing.webp"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="images/logo/5.webp"
+                                    alt="Captain Plumbing">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="33" data-toggle="modal" data-title="Captain Plumbing"
+                                data-image="images/captain plumbing.webp"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="images/logo/6.webp"
+                                    alt="Captain Plumbing">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="33" data-toggle="modal" data-title="Captain Plumbing"
+                                data-image="images/captain plumbing.webp"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="images/logo/7.webp"
+                                    alt="Captain Plumbing">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="33" data-toggle="modal" data-title="Captain Plumbing"
+                                data-image="images/captain plumbing.webp"
+                                data-target="#image-gallery">
+                                <img class="img-thumbnail"
+                                    src="images/logo/8.webp"
+                                    alt="Captain Plumbing">
+                            </a>
+                        </div>
+
+
+                    
+                    </div>
+
+                   
+
+
+                    <div class="modal " id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="image-gallery-title"></h4>
+                                    <button type="button" class="close" data-dismiss="modal"><span
+                                            aria-hidden="true">×</span><span class="sr-only">Close</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary float-left"
+                                        id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                                    </button>
+
+                                    <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i
+                                            class="fa fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane " id="tab3-tab-pane" role="tabpanel" aria-labelledby="tab3-tab" tabindex="0">
+                <div class="container pt-5">
+                    <div class="row">
+                        <!-- business card -->
+
+
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="80" data-toggle="modal" data-title="Top Right Car Care">
+                                <img class="img-thumbnail"
+                                    src="images/New Webp Business Card/Top Right Car Care.webp"
+                                    alt="Top Right Car Care">
+                            </a>
+                        </div>
+
+
+                        <!-- ....... -->
+
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="81" data-toggle="modal" data-title="B.A.C.A PROPERTY MANTAINENCE">
+                                <img class="img-thumbnail" src="images/New Webp Business Card/bacapropertymantainance.webp"
+                                    alt="baca property mantainance">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="82" data-toggle="modal" data-title="GABLE ENTERPRISES PROPERTIES">
+                                <img class="img-thumbnail" src="images/New Webp Business Card/gableenterprises.webp"
+                                    alt="Gable Enterprises">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="83" data-toggle="modal" data-title="GRESHAM HANDYMAN">
+                                <img class="img-thumbnail" src="images/New Webp Business Card/greshamhandyman.webp"
+                                    alt="Gresham Handyman">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="84" data-toggle="modal" data-title="J.J.JONES">
+                                <img class="img-thumbnail" src="images/New Webp Business Card/jjjoneshomerepair.webp"
+                                    alt="JJ Jones Home Repair">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="85" data-toggle="modal" data-title="SHALOM HOUSE CLEANING">
+                                <img class="img-thumbnail" src="images/New Webp Business Card/shalomhousecleaning.webp"
+                                    alt="Shalom House Cleaning">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="86" data-toggle="modal" data-title="MEKDIM JEMBERU">
+                                <img class="img-thumbnail" src="images/New Webp Business Card/kiflemdcompany.webp"
+                                    alt="Kifle MD Company">
+                            </a>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="89" data-toggle="modal" data-title="SPLISH SPLASH">
+                                <img class="img-thumbnail" src="images/New Webp Business Card/splishsplash.webp"
+                                    alt="Splish Splash">
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                            <a class="thumbnail" href="#" data-bs-toggle="modal" data-bs-target="#modalShow"
+                                data-image-id="90" data-toggle="modal" data-title="TERRENCE JONES">
+                                <img class="img-thumbnail" src="images/New Webp Business Card/terrence-jones.webp"
+                                    alt="Terrence Jones">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+
+            <!-- Delivered Products -->
+
+            <div class="tab-pane " id="tab5-tab-pane" role="tabpanel" aria-labelledby="tab5-tab" tabindex="0">
+                <ul class="grid effect-1" id="grid">
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/1 (1).webp"></a></li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/2.webp"></a></li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/3.webp"></a></li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/4.webp"></a></li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/3.webp"></a>
+                    </li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/5.webp"></a></li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/6.webp"></a></li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/7.webp"></a></li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/8.webp"></a></li>
+                    <li class="shown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalShow"><img
+                                src="images/Branding/9.webp"></a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+
+
+         
+    <br>
+   <center>
+        <div class="container bi">
+          <div class="row justify-content-center align-items-center">
+           <a href="Portfolio.html"> <button type="" style="width: 40%;">View All</button></a>
+          </div>
+        </div>
+      </center>
+    </section><!-- /Portfolio Section -->
+
+ 
+ <br>
+ <hr>
+ <br>
+
+   <!-- Stats Section -->
+<section id="stats" class="stats section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 align-items-center justify-content-between">
+
+      <div class="col-lg-5">
+        <img src="assets/img/stats-img.webp" alt="Stats Image" class="img-fluid">
+      </div>
+
+      <div class="col-lg-6">
+
+        <h3 class="fw-bold fs-2 mb-3">Transforming Ideas into Digital Success</h3>
+        <p>
+          Our commitment to excellence has driven us to achieve remarkable milestones. We take pride in our collaborative approach and dedication to delivering exceptional results for our clients.
+        </p>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="bi bi-emoji-smile flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Happy Clients</strong> <span>Our success is measured by our clients' satisfaction.</span></p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="bi bi-journal-richtext flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Projects Delivered</strong> <span>Over 500 successful projects completed with excellence.</span></p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="bi bi-headset flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Hours of Support</strong> <span>Providing unwavering support to our clients.</span></p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-6">
+            <div class="stats-item d-flex">
+              <i class="bi bi-people flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                <p><strong>Dedicated Team Members</strong> <span>A passionate team committed to your success.</span></p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Stats Section -->
+
+<br><br>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section dark-background">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>What Our Clients Say</p>
+  </div><!-- End Section Title -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>Ali Khan</h3>
+            <h4>Owner of Sweet Delights Bakery, Pakistan</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The team transformed my bakery’s online presence. The beautiful website has brought in many new customers!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>Mary Smith</h3>
+            <h4>Owner of Floral Bliss, USA</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The attention to detail and creative design made my floral business stand out online. Highly recommended!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>Omar Farooq</h3>
+            <h4>Owner of Trendy Boutique, Pakistan</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The website built by this team has transformed my business, resulting in a remarkable increase in sales!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>Akira Tanaka</h3>
+            <h4>Owner of Tanaka Designs, Japan</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The team helped us create a stunning online presence. Our orders have skyrocketed since launching the new site!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>Fatima Al-Hassan</h3>
+            <h4>Owner of Al-Hassan Crafts, Saudi Arabia</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The professionalism and quality of service were top-notch. My crafts business now shines online!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>David Johnson</h3>
+            <h4>Owner of Ahmed’s Furniture, Africa</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The website has improved my visibility and customer engagement tremendously. Highly satisfied!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>Sara Hussain</h3>
+            <h4>Owner of Hussain’s Bookstore, Pakistan</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Thanks to the team's efforts, my bookstore’s online visibility has improved tremendously. User-friendly and visually appealing!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>John Doe</h3>
+            <h4>Owner of Digital Gadgets, USA</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>The quality of the website design and the team's support has been exceptional. I highly recommend their services!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <h3>Maria Lopez</h3>
+            <h4>Owner of Lopez Fashions, Philippines</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Our online store's performance has greatly improved. The team’s creativity and support are commendable!</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+
+
+<br><br><br>
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Contact Us</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="contact-info">
+          <h3>Send your inquiries</h3>
+          <p >
+            
+            
+           <b> We’re just a message away! </b>Feel free to reach out with any inquiries, questions, or feedback. Our dedicated team is here to listen and assist you, ensuring prompt responses to your concerns. Your input is invaluable, and we look forward to hearing from you!</p>
+        </div>
+      </div><!-- End Contact Info -->
+      <div class="col-lg-8">
+        <form action="https://api.web3forms.com/submit" class="rizcontact" method="POST" data-aos="fade-up" data-aos-delay="100" onsubmit="submitForm(event)">
+          <input type="hidden" name="access_key" value="c6ed4ea8-33f4-4c42-b284-417fc59f9e04">
+        
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+        
+            <div class="col-md-6">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+        
+            <div class="col-md-6">
+              <input type="text" class="form-control" name="contact_number" placeholder="Contact Number" required="">
+            </div>
+        
+            <div class="col-md-6">
+              <input type="text" id="country" name="country" class="form-control" placeholder="Select Your Country" required="">
+            </div>
+        
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="Service" placeholder="Service" required="">
+            </div>
+        
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+            <center>
+            <button type="submit" class="click-me-button" style="width: 50%;"><span>Send Message</span></button>
+          </center>
+          </div>
+        </form>
+        
+      </div>
+      
+      <!-- Popup Modal -->
+      <div id="thankYouModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+        <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+          <h2>Thank You!</h2>
+          <p>Your message has been successfully sent. We appreciate your interest and will get back to you soon.</p>
+          <button onclick="closeModal1()" style="background-color:#FF3D00; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+        </div>
+      </div>
+      
+      <!-- JavaScript function to handle form submission and popup -->
+      <script>
+        function submitForm(event) {
+          event.preventDefault(); // Prevent default form submission
+      
+          const form = event.target;
+      
+          // Show the Thank You modal immediately upon form submission
+          document.getElementById('thankYouModal').style.display = 'flex';
+      
+          // Submit the form data asynchronously
+          fetch(form.action, {
+            method: form.method,
+            body: new FormData(form),
+          }).then(response => {
+            if (response.ok) {
+              // Clear the form input fields after successful submission
+              form.reset();
+            } else {
+              alert('There was a problem submitting your form.');
+            }
+          }).catch(error => {
+            console.error('Error:', error);
+            alert('There was an error submitting your form.');
+          });
+        }
+      
+        // Function to close the Thank You modal
+        function closeModal1() {
+          document.getElementById('thankYouModal').style.display = 'none';
+        }
+      </script>
+      
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+ 
+</section><!-- /Contact Section -->
+<br><br>
+<!-- jQuery and jQuery UI Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+
+
+<!-- jQuery UI CSS -->
+
+<div class="bubbles_wrap">
+  <div class="bubble x1"></div>
+  <div class="bubble x2"></div>
+  <div class="bubble x3"></div>
+  <div class="bubble x4"></div>
+  <div class="bubble x5"></div>
+  <div class="bubble x6"></div>
+  <div class="bubble x7"></div>
+  <div class="bubble x8"></div>
+  <div class="bubble x9"></div>
+  <div class="bubble x10"></div>
+  <div class="bubble x11"></div>
+  <div class="bubble x12"></div>
+  <div class="bubble x13"></div>
+  <div class="bubble x14"></div>
+  <div class="bubble x15"></div>
+  <div class="bubble x16"></div>
+  <div class="bubble x17"></div>
+  <div class="bubble x18"></div>
+  <div class="bubble x19"></div>
+  <div class="bubble x20"></div>
+</div>
+
+
+ </main>
+
+ <footer id="footer" class="footer dark-background"> 
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename"><img src="assets/img/logo_1.webp" alt=""></span>
+          </a>
+          <p>At Web Expertizo, we deliver customized digital solutions to help businesses enhance their online presence and achieve success through innovative technology and strategies.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/?lang=en"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="linkedin.com"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html"> Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="About-Us.html"> About Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Portfolio.html"> Portfolio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Testimonials.html"> Testimonials</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Contact-Us.html"> Contact Us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Terms&Conditions.html"> Terms & Conditions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Privacy-Policy.html"> Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="Custom-Web-Development.html"> Custom Web Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="WordPress-Development.html"> WordPress Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Shopify-Store-Development.html"> Shopify Store Development</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="SEO-Optimization.html"> SEO Optimization</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="Graphic-Design.html"> Graphic Design</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          
+          <!-- Newsletter Form -->
+          <form action="https://api.web3forms.com/submit" class="webexpertizosub" method="POST" onsubmit="submitNewsletter(event)">
+            <input type="hidden" name="access_key" value="c6ed4ea8-33f4-4c42-b284-417fc59f9e04">
+            
+            <div class="newsletter-form bi">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <input type="submit" value="Subscribe">
+            </div>
+            
+            <div class="sent-message" style="display:none;">You have successfully subscribed to our newsletter. We will keep you updated!</div>
+          </form>
+          
+          <!-- Popup Modal -->
+          <div id="thankYouModal1" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:1000; justify-content:center; align-items:center;">
+            <div style="background:white; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+              <h2 style="color: black;">Thank You!</h2>
+              <p style="color: black;">You have successfully subscribed to our newsletter. We will keep you updated!</p>
+              <button onclick="closeModal()" style="background-color:#FF3D00; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">Close</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- JavaScript function to handle form submission and popup -->
+        <script>
+          function submitNewsletter(event) {
+            event.preventDefault(); // Prevent default form submission
+        
+            const form = event.target;
+        
+            // Show the Thank You modal immediately upon form submission
+            document.getElementById('thankYouModal1').style.display = 'flex';
+        
+            // Submit the form data asynchronously
+            fetch(form.action, {
+              method: form.method,
+              body: new FormData(form),
+            }).then(response => {
+              if (response.ok) {
+                // Clear the form input fields after successful submission
+                form.reset();
+              } else {
+                alert('There was a problem submitting your form.');
+              }
+            }).catch(error => {
+              console.error('Error:', error);
+              alert('There was an error submitting your form.');
+            });
+          }
+        
+          // Function to close the Thank You modal
+          function closeModal() {
+            document.getElementById('thankYouModal1').style.display = 'none';
+          }
+        </script>
+        
+        
+
+      </div>
+    </div>
+  </div>
+<br>
+  <div class="copyright">
+    <div class="container text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Web Expertizo</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="index.html">Web Expertizo</a>
+      </div>
+    </div>
+  </div>
+<br><br>
+</footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+  
+  <script src="js/3.js"></script>
+  <script src="js/4.js"></script>
+  <script src="js/5.js"></script>
+  <script src="js/6.js"></script>
+  <script src="js/7.js"></script>
+  <script src="js/8.js"></script>
+  <script src="js/9.js"></script>
+  <script src="js/10.js"></script>
+  <script src="js/11.js"></script>
+
+  <script>
+      new AnimOnScroll(document.getElementById('grid'), {
+          minDuration: 0.4,
+          maxDuration: 0.7,
+          viewportFactor: 0.2
+      });
+
+      function gallerySet() {
+          new AnimOnScroll(document.getElementById('grid'), {
+              minDuration: 0.4,
+              maxDuration: 0.7,
+              viewportFactor: 0.2
+          });
+      }
+
+      $(document).ready(function () {
+          $('a').on('click', function () {
+              var src = $('img', this).attr('src');
+              var modalattr = $(this).attr('data-bs-target');
+              if (modalattr === '#modalShow') {
+                  $('#modalShow .modal-body img').attr('src', src);
+              }
+
+          })
+
+          $('#tab1-tab.active').click(function (e) {
+
+              e.stopPropagation();
+
+              $('.dropdown-toggle').dropdown('toggle');
+
+          });
+      })
+
+
+
+  </script>
+
+<script>
+  document.querySelectorAll('.box').forEach((box) => {
+  box.addEventListener('mouseenter', function() {
+      const img = this.querySelector('img');
+      const scrollAmount = img.clientHeight - this.clientHeight; // Calculate how much to scroll
+      img.style.transition = 'transform 4s ease-in-out'; // Slower scroll speed (4 seconds)
+      img.style.transform = `translateY(-${scrollAmount}px)`; // Scroll the image by the calculated amount
+  });
+
+  box.addEventListener('mouseleave', function() {
+      const img = this.querySelector('img');
+      img.style.transition = 'transform 4s ease-in-out'; // Slow reset as well
+      img.style.transform = 'translateY(0)'; // Reset image scroll when the user stops hovering
+  });
+});
+
+</script>
+
+</body>
+
+</html>
